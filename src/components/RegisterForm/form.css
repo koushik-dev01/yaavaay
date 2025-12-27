@@ -1,0 +1,13 @@
+.diff-container .hide {
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+}
+
+.diff-container .show {
+	opacity: 1;
+	transition: opacity .4s ease-in-out;
+}
+
+.diff-container form {
+	opacity: 0;
+}

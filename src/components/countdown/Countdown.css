@@ -1,0 +1,42 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  color: #002bff;
+  font-size: max(35px, 5vw);
+}
+
+.countdown-label {
+  font-size: max(25px, 2vw);
+  color: #002bff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px; /* Space between the label and the number */
+}
+
+.countdown-separator {
+  display: flex;
+  align-items: flex-end; /* Align the separator with the numbers */
+  font-size: max(35px, 5vw);
+  color: #002bff;
+  margin: 0 15px;
+  align-self: stretch;
+  padding-bottom: .2em;
+}
+
+.countdown-item > div {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.countdown-separator {
+		margin: 0 .1vw;
+	  }
+}

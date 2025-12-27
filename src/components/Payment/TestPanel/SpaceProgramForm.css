@@ -1,0 +1,303 @@
+/* Full-Screen Background */
+.space-container {
+    height: 100vh;
+    background-image: url('../../images/space-bg.jpg'); /* Replace with your space image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Glass Card */
+  .glass-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+    padding: 30px 40px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    max-width: 250px;
+    width: 100%;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    animation: shine-border 2s linear infinite;
+  }
+
+  
+  /* Logo Wrapper */
+  .logo-wrapper {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Logo Image */
+  .logo {
+    width: 100%;
+    border-radius: 50%;
+  }
+  /* Input Group */
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .input-group .icon {
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .icon-card {
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 18px;
+    height: 20px;
+    width: 25px;
+  }
+  
+  .input-group input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+  }
+
+  .input-group select {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+
+  }
+  
+  .input-group input::placeholder {
+    color: #ccc;
+  }
+  
+  /* Input Group for Row (Expiry Date and CVC) */
+  .input-group-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group-row .input-group {
+    width: 48%; /* Makes both fields share the line */
+  }
+
+  .input-group-row .input-group input {
+    width: 48%; /* Makes both fields share the line */
+  }
+  
+  /* Checkbox Group */
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Confirm Button */
+  .confirm-button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    border-radius: 5px;
+    background: url('../../images/space-bg.jpg') no-repeat center center; /* Set the background image */
+    background-size: cover; /* Ensure the background image covers the button */
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .confirm-button:hover {
+    background: url('../../images/space-bg.jpg') no-repeat center center; /* Optional: Different background image on hover */
+    background-size: cover;
+  }
+  
+  /* Divider */
+  .divider {
+    position: absolute;
+    top: 90px; /* Adjust this value to control the position of the divider */
+    left: 0;
+    right: 0;
+    height: 1px; /* Set the thickness of the divider */
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .checkout-form {
+    margin-top: 60px;     
+  }
+
+  .mr-top-0 {
+    margin-top: 0px;
+  }
+
+ 
+ .card-r{
+    border-radius:5px 5px 0px 0px
+ }
+
+ .exp-r{
+   border-radius:  0px 0px 0px 5px
+ }
+  
+ .cvc-r{
+    border-radius: 0px 0px 5px 0px
+     }
+
+     /* Input Group for Select Dropdown */
+.input-group select {
+  appearance: none; /* Removes the default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  width: 100%;
+  
+  text-align: left; /* Ensure text is aligned to the left */
+  padding: 0px 10px;
+
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.color-cc {
+  color: #fff !important;
+}
+
+.input-group .open {
+    appearance: none; /* Removes the default dropdown arrow */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    padding: 0px 10px;
+    color: #4c4848;
+    width: 100%;
+    text-align: left; /* Ensure text is aligned to the left */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+
+  .title {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .cross-icon{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  
+
+  img {
+    padding: 2px;
+        height: auto;
+        border: none;
+}
+
+
+.error-p {
+  font-size: 1vh;
+  color: #002BFF;
+  text-align: justify;
+  text-align-last: justify;
+  line-height: normal;
+  font-weight: bold;
+}
+
+
+.spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #fff;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.confirm-button {
+  margin-top: 40px;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  border-radius: 5px;
+  background: url('../../images/space-bg.jpg') no-repeat center center; /* Set the background image */
+  background-size: cover; /* Ensure the background image covers the button */
+  color: #fff;
+  cursor: pointer;
+  position: relative; /* Needed for loader positioning */
+  overflow: hidden; /* Prevent loader from overflowing */
+  transition: background 0.3s ease;
+}
+
+.confirm-button .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/loader.gif') no-repeat center center; /* Loader GIF */
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+  
+}
+
+.confirm-button.loading .loader {
+  display: block; /* Show loader when loading class is applied */
+}
+
+.confirm-button.loading {
+  color: transparent; /* Hide the button text while loading */
+  pointer-events: none; /* Disable clicks while loading */
+}

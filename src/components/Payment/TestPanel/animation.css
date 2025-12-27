@@ -1,0 +1,49 @@
+
+  .media-object {
+    --border-width: 2px;
+    --radius: 10px;
+  
+    position: relative;
+    border-radius: var(--radius);
+    border: var(--border-width) solid transparent;
+  }
+  
+  .media-object::before {
+    backdrop-filter: blur(15px);
+    content: " ";
+    position: absolute;
+    inset: calc(var(--border-width) * -1);
+    z-index: -1;
+    border: inherit;
+    border-radius: inherit;
+    background-image: conic-gradient(from var(--angle), rgb(255 255 255 / 33%) 80%, #fafafa 88%, #ffffff 92%, #f8f8f8 100%);
+    background-origin: border-box;
+    -webkit-mask:
+      linear-gradient(black, black) content-box,
+      linear-gradient(black, black);  
+    mask: linear-gradient(black, black),
+          linear-gradient(black, black);
+    -webkit-mask-clip: content-box, border-box;  
+    mask-clip: content-box, border-box;
+    -webkit-mask-composite: xor;  
+    mask-composite: exclude;
+    animation: spin 5s linear infinite;
+  }
+  
+  @supports not (background: paint(something)) {
+    .media-object::before {
+  background-image: conic-gradient(#381D6A 80%, #E0D1FF 88%, #E0D1FF 92%, #381D6A 100%);    
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+  
+  @keyframes spin {
+    to {
+      --angle: 1turn;
+    }
+  }
